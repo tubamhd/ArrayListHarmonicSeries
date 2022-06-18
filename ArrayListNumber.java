@@ -10,21 +10,16 @@ public class ArrayListNumber {
         System.out.print("How many members in your list:  ");
         int ListNo = input.nextInt();
 
-        /*int i = 0;
-        while (i < ListNo){
-            System.out.print(i + ". Member of YourList:  ");
-            int a = input.nextInt();
-            i++;
-            }
-
-         */
-
+        
+    //Getting size of ArrayList from user
         for (int i = 0; i < ListNo; i++){
             System.out.print(i + ". Member of YourList:  ");
             int a = input.nextInt();
             NewList.add(a);
-            }
+        }
+    //Created size and members for ArrayList
 
+    //Members added to list
         System.out.print("Members of List:  ");
         int total = 0;
         for (int j = 0; j < NewList.size(); j++){
@@ -33,9 +28,11 @@ public class ArrayListNumber {
             System.out.print(" , ");
             total += NewList.get(j);
         }
+    //Calculating Average Members of List
         System.out.println();
         System.out.println("Average of Your List Members: " + total / NewList.size());
 
+   //Calculating Harmonic result     
         float result = 0;
         for (int k : NewList) {
             result += 1f / k;
